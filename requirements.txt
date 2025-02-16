@@ -6,3 +6,4 @@ numpy
 faiss-cpu
 langchain
 langchain_huggingface
+langchain-community
