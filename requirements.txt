@@ -1,9 +1,14 @@
 streamlit
 pytesseract
+pillow
 opencv-python
 pandas
 numpy
 faiss-cpu
 langchain
-langchain_huggingface
 langchain-community
+langchain-huggingface
+google-generativeai
+sentence-transformers
+requests
+pyspark
