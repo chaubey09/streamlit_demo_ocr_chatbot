@@ -16,34 +16,6 @@ import os
 # --- UI Setup ---
 st.set_page_config(page_title="AI Chat App with OCR", layout="wide")
 
-# Custom CSS
-st.markdown("""
-    <style>
-    .bio-card {
-        background-color: #262730;
-        border-radius: 12px;
-        padding: 16px;
-        color: white;
-        font-size: 14px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        margin-top: 15px;
-    }
-    .bio-card a {
-        color: #4da6ff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .bio-card a:hover {
-        text-decoration: underline;
-    }
-    </style>
-
-    <div class="bio-card">
-        <strong>👤 Anmol Chaubey</strong><br><br>
-        📧 <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a><br>
-        🔗 <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">LinkedIn Profile</a>
-    </div>
-""", unsafe_allow_html=True)
 
 
 
@@ -57,14 +29,35 @@ with st.sidebar:
     st.subheader("Contact Me!")
     try:
         profile_pic = Image.open("IMG_0924(1).jpg")
-        st.image(profile_pic, width=150, caption="Anmol Chaubey", output_format="PNG")
+        st.image(profile_pic, width=150, caption="Anmol Chaubey")
     except FileNotFoundError:
         st.warning("Profile photo not found.")
+
     st.markdown("""
+        <style>
+        .bio-card {
+            background-color: #2c2f34;
+            border-radius: 12px;
+            padding: 16px;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            margin-top: 10px;
+        }
+        .bio-card a {
+            color: #4da6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bio-card a:hover {
+            text-decoration: underline;
+        }
+        </style>
+
         <div class="bio-card">
-            <strong>Anmol Chaubey</strong><br>
-            Email: <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a><br>
-            <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">LinkedIn</a>
+            <strong>👤 Anmol Chaubey</strong><br><br>
+            📧 <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a><br>
+            🔗 <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">LinkedIn</a>
         </div>
     """, unsafe_allow_html=True)
 
