@@ -20,16 +20,16 @@ st.set_page_config(page_title="AI Chat App with OCR", layout="wide")
 st.markdown("""
     <style>
     .bio-card {
-        background-color: #ffffff;
+        background-color: #262730;
         border-radius: 12px;
         padding: 16px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        text-align: left;
-        margin-top: 20px;
-        font-size: 16px;
+        color: white;
+        font-size: 14px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        margin-top: 15px;
     }
     .bio-card a {
-        color: #1a73e8;
+        color: #4da6ff;
         text-decoration: none;
         font-weight: bold;
     }
@@ -39,19 +39,12 @@ st.markdown("""
     </style>
 
     <div class="bio-card">
-        <h3 style="margin-bottom: 10px;">👤 Anmol Chaubey</h3>
-        <p style="margin: 6px 0;">
-            📧 <strong>Email:</strong>
-            <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a>
-        </p>
-        <p style="margin: 6px 0;">
-            🔗 <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">
-                linkedin.com/in/anmol-chaubey-120b42206
-            </a>
-        </p>
+        <strong>👤 Anmol Chaubey</strong><br><br>
+        📧 <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">LinkedIn Profile</a>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 # Title
