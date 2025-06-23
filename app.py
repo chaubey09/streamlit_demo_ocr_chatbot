@@ -19,29 +19,40 @@ st.set_page_config(page_title="AI Chat App with OCR", layout="wide")
 # Custom CSS
 st.markdown("""
     <style>
-    .bio-card { 
-        background-color: #ffffff; 
-        border-radius: 12px; 
-        padding: 16px; 
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
-        text-align: center; 
-        margin-bottom: 20px; 
+    .bio-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: left;
+        margin-top: 20px;
+        font-size: 16px;
     }
-    .bio-card img { 
-        border-radius: 50%; 
-        width: 150px !important; 
-        height: 150px; 
-        object-fit: cover; 
+    .bio-card a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: bold;
     }
-    .bio-card a { 
-        color: #4a90e2; 
-        text-decoration: none; 
-    }
-    .bio-card a:hover { 
-        text-decoration: underline; 
+    .bio-card a:hover {
+        text-decoration: underline;
     }
     </style>
+
+    <div class="bio-card">
+        <h3 style="margin-bottom: 10px;">👤 Anmol Chaubey</h3>
+        <p style="margin: 6px 0;">
+            📧 <strong>Email:</strong>
+            <a href="mailto:anmolchaubey820@gmail.com">anmolchaubey820@gmail.com</a>
+        </p>
+        <p style="margin: 6px 0;">
+            🔗 <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/anmol-chaubey-120b42206/" target="_blank">
+                linkedin.com/in/anmol-chaubey-120b42206
+            </a>
+        </p>
+    </div>
 """, unsafe_allow_html=True)
+
 
 # Title
 st.title("Chat Application with OCR, FAISS, and Gemini")
